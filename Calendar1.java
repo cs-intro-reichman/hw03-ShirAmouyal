@@ -15,7 +15,7 @@ public class Calendar1 {
 	 */
 	public static void main(String args[]) {
 
-	 	while (year<2000)
+	 	while (year<1902)
 	    {
 			if(dayOfWeek==1)
 	 	  	System.out.println(dayOfMonth+"/"+month+"/"+year+"  Sunday");

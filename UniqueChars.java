@@ -20,6 +20,10 @@ public class UniqueChars {
           boolean b1=false;
           for(int x=0;x<s1.length();x++)
           {
+            if(s.charAt(i)==32){
+                s2+=" ";
+
+            }
            if(s.charAt(i)==s1.charAt(x))
            {
             b1=true;
