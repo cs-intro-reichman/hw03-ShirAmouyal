@@ -8,7 +8,7 @@ public class Calendar1 {
 	static int year = 1900;
 	static int dayOfWeek = 2;     // 1.1.1900 was a Monday
 	static int nDaysInMonth = 31; // Number of days in January
-	
+	static int countsunday=0;
 	/** 
 	 * Prints the calendars of all the years in the 20th century. Also prints the  
 	 * number of Sundays that occured on the first day of the month during this period.
@@ -21,13 +21,14 @@ public class Calendar1 {
 	 	  	System.out.println(dayOfMonth+"/"+month+"/"+year+"  Sunday");
 			else
 			System.out.println(dayOfMonth+"/"+month+"/"+year);
-			advance();
-			if (year==1902){break;}
+			advance();		
         }
+		System.out.println("During the 20th century, "+countsunday+" Sundays fell on the first day of the");
 	 	//// Write the necessary ending code here
 	 }
 	 private static void advance() {
 		// Replace this comment with your code
+	  if(dayOfWeek==1&&month==1) countsunday++;
 	  if(dayOfWeek==7){
 		dayOfWeek=1;
 		
@@ -67,6 +68,7 @@ public class Calendar1 {
 	private static int nDaysInMonth(int month, int year) {
 		// Replace the following statement with your code
 		boolean b1=isLeapYear(year);
+		
 		if(month==1) return 31;
 		else if(month==2&&b1==true)return 29;
 		else if(month==2&&b1==false) return 28;
