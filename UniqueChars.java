@@ -1,7 +1,7 @@
 /** String processing exercise 2. */
 public class UniqueChars {
     public static void main(String[] args) {  
-        String str = args[0];
+        String str ="args[0]";
         System.out.println(uniqueChars(str));
     }
 
@@ -12,6 +12,27 @@ public class UniqueChars {
      */
     public static String uniqueChars(String s) {
         // Replace the following statement with your code
-        return null;
+        String s1="";
+        String s2="";
+        int i=0;
+        while(i<s.length())
+        {
+          boolean b1=false;
+          for(int x=0;x<s1.length();x++)
+          {
+           if(s.charAt(i)==s1.charAt(x))
+           {
+            b1=true;
+           }
+          }
+          if(b1==false)
+          {
+           s2+=s.charAt(i);
+           s1+=s.charAt(i);
+          } 
+          i++;
+          
+        }
+        return s2;
     }
 }
