@@ -17,10 +17,6 @@ public class Calendar1 {
 
 	 	while (year<1901)
 	    {
-			if(dayOfWeek==1)
-	 	  	System.out.println(dayOfMonth+"/"+month+"/"+year+"  Sunday");
-			else
-			System.out.println(dayOfMonth+"/"+month+"/"+year);
 			advance();		
         }
 		System.out.println("During the 20th century, "+countsunday+" Sundays fell on the first day of the");
