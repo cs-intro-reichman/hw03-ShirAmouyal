@@ -17,15 +17,16 @@ public class Calendar1 {
 
 	 	while (year<2000)
 	    {
-			advance();		
+		 if(dayOfWeek==1 && dayOfMonth==1){
+		 countsunday++;}
+		 advance();	
+		 
         }
 		System.out.println("During the 20th century, "+countsunday+" Sundays fell on the first day of the month");
 	 	//// Write the necessary ending code here
 	 }
 	 private static void advance() {
 		// Replace this comment with your code
-	  if(dayOfWeek==1&&nDaysInMonth==1){
-		countsunday++;}
 	  if(dayOfWeek==7){
 		dayOfWeek=1;
 		
