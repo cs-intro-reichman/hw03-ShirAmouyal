@@ -31,7 +31,7 @@ public class Calendar {
 	 }
 	 private static void advance() {
 		// Replace this comment with your code
-	  if(dayOfWeek==1&&month==1) ;
+	   
 	  if(dayOfWeek==7){
 		dayOfWeek=1;
 		
