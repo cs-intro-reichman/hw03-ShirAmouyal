@@ -18,14 +18,18 @@ public class Calendar {
         int yearToGet=Integer.parseInt(args[0]);
 	 	while (year<yearToGet)
 	    {
-            if(dayOfWeek==1)
-	 	  	System.out.println(dayOfMonth+"/"+month+"/"+year+"  Sunday");
-            else{
+		advance();		
+        }
+        while(year == yearToGet){ 
+            if(dayOfWeek==1){
+             System.out.println(dayOfMonth+"/"+month+"/"+year+" Sunday");
+            }
+             else{
             System.out.println(dayOfMonth+"/"+month+"/"+year);
             }
-			
-			advance();		
-        }
+                advance();
+            }
+         
 		
 	 	//// Write the necessary ending code here
 	 }
