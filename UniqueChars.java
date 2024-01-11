@@ -21,7 +21,7 @@ public class UniqueChars {
           for(int x=0;x<s1.length();x++)
           {
             if(s.charAt(i)==32){
-                s2+=" ";
+                s2+="";
 
             }
            if(s.charAt(i)==s1.charAt(x))
